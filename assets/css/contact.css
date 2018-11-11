@@ -1,0 +1,250 @@
+body {
+    color: #777777;
+}
+
+#nav-bar {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background: #ffffff;
+    width: 960px;
+    margin: 0px auto 0px auto;
+}
+
+h1 {
+    background: #4aaaa5;
+    color: white;
+    font-size: 28px;
+    font-weight: 550;
+    letter-spacing: 1.5;
+    line-height: 2.0;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    float: left;
+    position: relative;
+    margin: 0;
+}
+
+.links {
+    font-size: 20px;
+    float: right;
+    letter-spacing: 1.5;
+    line-height: 2.0;
+    position: relative;
+    margin-top: 15px;
+}
+
+a {
+    color: #777777;
+    padding-left: 15px;
+    margin-left: 15px;
+    text-decoration: none;
+    margin-top: auto;
+    border-left: 1px solid #efefef;
+}
+
+a:first-child {
+    border-left: 0 none;
+}
+
+a:hover {
+    color: #4aaaa5;
+}
+
+#main-content {
+    border-top-style: solid;
+    border-top-width: 0.5px;
+    border-top-color: #666666;
+    background-image: url('../images/upfeathers.png');
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    width: 100%;
+    float: left;
+    padding-bottom: 100px;
+    padding-right: 100px;
+}
+
+#white-box {
+    background-color: white;
+    width: 960px;
+    height: 600px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 30px 0px 30px 0px;
+}
+
+h2 {
+    color: #4aaaa5;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 26px;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+hr {
+    width: 920px;
+}
+
+#form {
+    float: left;
+    width: 890px;
+    padding: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+}
+
+#Submit {
+    float: left;
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    margin-left: 20px;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+}
+
+#footer {
+    width: 100%;
+}
+
+#teal-foot {
+    background-color: #4aaaa5;
+    height: 5px;
+    width: 100%;
+    float: left;
+    padding-right: 50px;
+}
+
+#grey-foot {
+    background-color: #666666;
+    height: 40px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    float: left;
+    padding: 20px;
+}
+
+#CP {
+    vertical-align: bottom;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Full Screen or Browser */
+@media screen and (max-width: 980px) {
+    h1 {
+        margin-left: 20px;
+    }
+
+    .links {
+        padding-right: 50px;
+    }
+
+    #main-content {
+        width: 100%;
+        height: 900px;
+        float: left;
+    }
+
+    #white-box {
+        width: 650px;
+        position: absolute;
+        margin-left: 20px;
+    }
+
+    hr {
+        width: 610px;
+    }
+
+    #form {
+        width: 580px;
+    }
+}
+
+/* Tablet Size */
+@media screen and (max-width: 768px) {
+    
+    #nav-bar {
+        width: 708px;
+    }
+
+    h1 {
+        margin-left: 0;
+    }
+
+    #main-content {
+        width: 100%;
+        height: 800px;
+        float: left;
+    }
+
+    #white-box {
+        width: 708px;
+        position: absolute;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    hr {
+        width: 668px;
+    }
+
+    #form {
+        width: 640px;
+    }
+}
+
+/* Phone Landscape View */
+@media screen and (max-width: 640px) {
+
+    #nav-bar .links {
+        float: none;
+        position: static;
+        margin: 0;
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+        width: 580px;
+    }
+
+    .links {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    h1 {
+        margin: 0;
+        width: 600px;
+        top: 0;
+    }
+
+    #main-content {
+        width: 100%;
+        height: 800px;
+        float: left;
+    }
+
+    #white-box {
+        width: 580px;
+        position: absolute;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    hr {
+        width: 540px;
+    }
+
+    #form {
+        width: 510px;
+    }
+}

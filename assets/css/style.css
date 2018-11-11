@@ -1,0 +1,244 @@
+/* When I tried combining all of my style sheets into ONE style.css I lost my backgroud image and couldn't figure out how to get it back, despite having much better skills with debugging than I even had last week! So sadly, I'm going back to using my individual style sheets for the sake of keeping my background image.... */
+
+
+body {
+    color: #777777;
+}
+
+/* Well I lost my background image...again...and I moved it to the body like the HW solutions but that didn't help me...ugh! */
+
+#nav-bar {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background: #ffffff;
+    width: 960px;
+    margin: 0px auto 0px auto;
+}
+
+h1 {
+    background: #4aaaa5;
+    color: white;
+    font-size: 28px;
+    font-weight: 550;
+    letter-spacing: 1.5;
+    line-height: 2.0;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    float: left;
+    position: relative;
+    margin: 0;
+}
+
+.links {
+    font-size: 20px;
+    float: right;
+    letter-spacing: 1.5;
+    line-height: 2.0;
+    position: relative;
+    margin-top: 15px;
+}
+
+a {
+    color: #777777;
+    padding-left: 20px;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+a:hover {
+    color: #4aaaa5;
+}
+
+#main-content {
+    background-image: url("assets/images/upfeathers.png");
+    border-top-style: solid;
+    border-top-width: 0.5px;
+    border-top-color: #666666;
+    width: 100%;
+    position: relative;
+    padding-bottom: 100px;
+    padding-right: 100px;
+}
+
+#white-box {
+    background-color: white;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    width: 960px;
+    margin: auto;
+    padding: 30px 0px 20px 0px;
+}
+
+h2 {
+    color: #4aaaa5;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 26px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+hr {
+    width: 920px;
+}
+
+/* Specific to About Me page */
+
+#allieImg {
+    width: 20%;
+    height: 20%;
+    float: left;
+    padding: 20px;
+}
+
+p {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 2.0;
+    letter-spacing: 0.3px;
+    padding: 20px;
+}
+
+/* Specific to Portfolio page */
+
+.row1 {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-right: 40px;
+}
+
+.container {
+    position: relative;
+    float: left;
+}
+
+.bottom1 {
+    width: 250px;
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+    background-color: #4aaaa5;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/**
+I'm trying to get the image labels/captions' text to align centered vertically...
+"vertical-align: center" did not do it when applied under my .bottom1 or .container
+"line-height: 1.8 did it for this specific example, but I recognize this is not the ideal fix... especially for responsiveness..."
+*/
+
+.row2 {
+    width: 350px;
+    height: 200px;
+    float: left;
+    margin-right: 40px;
+}
+
+.bottom2 {
+    width: 350px;
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+    background-color: #4aaaa5;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.row3 {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-right: 40px;
+}
+
+.bottom3 {
+    width: 250px;
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+    background-color: #4aaaa5;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* Specific to Contact page */
+
+#form {
+    float: left;
+    width: 800px;
+    padding: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+}
+
+#Submit {
+    float: left;
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    margin-left: 20px;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+}
+
+/* Begin Footer (applied to all three pages) */
+
+#footer {
+    width: 100%;
+    float: left;
+}
+
+#teal-foot {
+    background-color: #4aaaa5;
+    height: 5px;
+}
+
+#grey-foot {
+    background-color: #666666;
+    height: 40px;
+    color: white;
+    vertical-align: bottom;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Double check the vertical-align: bottom for the text alignment on the Copyright... */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Full Screen or Browser */
+@media screen and (max-width: 980px) {
+
+}
+
+/* Tablet Size */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Phone Landscape View */
+@media screen and (max-width: 640px) {
+
+}

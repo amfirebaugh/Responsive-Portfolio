@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    <title>About Me</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+    <!--<link rel="stylesheet" type="text/css" href="reset.css" />-->
+    <!-- Adding a reset CSS -->
+
+    <!-- media="screen" was taken out of the CSS reference because I don't think it's necessary...it came automatically with the html "starting package" -->
+
+</head>
+
+<body> 
+
+    <section class="clearfix">
+    <!--Navigation Bar-->
+        <section id="nav-bar">
+            <!--teal box for name-->
+            <h1>Allie Firebaugh</h1>
+            
+            <!--links with light grey divider bars-->
+
+            <!--NEED TO PUT IN GREY VERTICAL BARS
+            NEED TO CONNECT THE REAL LINKS-->
+            <div class="links">
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <!-- I learned via w3schools and StackOverflow that the alt attritube is not valid in an anchor for html5. Someone on StackOverflow mentioned the title attribute but it wasn't listed on w3schools so I decided to skip putting it in for sake of cleaner code? (idk)-->
+            </div>
+            
+        </section>
+    </section>
+
+    <section class="clearfix">
+        <section id="main-content">
+            <div id="white-box">
+            <!--Not yet sure if the div here is necessary because I know I can put in a css selector for h1 but but but idk lol-->
+                <div>
+                    <h2>About Me</h2>
+                </div>
+                <!--light grey horizontal divider bar, might use hr tag, but that might be for something different? instead might just use a thin box? not sure yet...-->
+                <!--<div id="hor-bar"> </div>-->
+                <hr>
+                <!--not sure if this div is necessary...-->
+                <div>
+                    <!--image will need to be formatted, definitely width, height, position, etc.-->
+                    <img id="image" src="assets/images/starting_bootcamp.jpg" alt="Pic of Me">
+                    <!--I know I can reference the p selector in my CSS.-->
+                    <p>
+                    The oldest of three girls, I grew up a little bossy, very talkative, independent, and hardworking. I was naturally motivated in school and performed well all the way through college, graduating with three majors: Physics, Math, and French. This is still one of my proudest accomplishments as a young adult. After undergrad I began a graduate program in Materials Science & Engineering, thinking that I would go towards a more practical route for a career. However, I found out quickly that I didn't enjoy it at all. I left the program and came back home. In my soul searching I decided to begin my journey to become a school teacher. I taught physics and oceanography for three years until I came to the conclusion that this too was not going to be the best fit for me, career wise, either. I knew I had to leave teaching, and with the cyclical timing of a school year combined with the timing of my decisions, I left my job at the conclusion of a school year. At this time I only had basic, initial thoughts about potential next steps in my life. Truly, I was terrified about what I would do next and how every aspect of my life would be affected. I'm a deteremined soul, though, and so it was back to the drawing board. This time around I took my soul searching a little more seriously. My heart strings kept pulling towards the idea of computer programming, and thus began my latest exciting adventure!
+                    <br><br>
+                    When I'm not working long hours on my new craft of coding, I enjoy caring for my pet chameleon, making home improvements, visiting family, traveling, watching sports, going to concerts, catching up with friends, and spending time outdoors. Another hobby that I've started taking more seriously recently, and requires plenty of time and research, is landlording! It's not easy folks. I stay really busy between all of these activities, and so I really value any time I can to take care of myself and overall health as well. Really I'm just a well-rounded, loud-mouthed, friendly, red-head-by-choice, young adult female who's really excited about this new adventure into this full stack coding bootcamp!
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="clearfix">
+        <section id="footer">
+            <!--For the teal line...?-->
+            <div id="teal-foot">
+            </div>
+            <!--For the dark grey line/box that includes the Copyright centered.-->
+            <div id="grey-foot">
+                <!-- This id (below) helped me position the Copyright text for this page, but for some reason is not working on the other two pages... :( I'm almost certain that there is CSS overriding the CSS for it because I'm not sure of any other reason it wouldn't work....but I also don't understand why because this footer is in a completely different section than everything else on the page, and this footer is identical on all of the pages. I've also kept the code for my 3 CSS pages organized in the same order to try to avoid this exact problem.-->
+                <p id="CP">Copyright &copy;</p>
+            </div>
+        </section>
+    </section>
+
+</body>
+</html>

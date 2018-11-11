@@ -1,0 +1,234 @@
+body {
+    color: #777777;
+}
+
+#nav-bar {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background: #ffffff;
+    width: 960px;
+    margin: 0px auto 0px auto;
+}
+
+h1 {
+    background: #4aaaa5;
+    color: white;
+    font-size: 28px;
+    font-weight: 550;
+    letter-spacing: 1.5;
+    line-height: 2.0;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    float: left;
+    position: relative;
+    margin: 0;
+}
+/* I had a really hard time getting rid of white space in my Navbar area in general, so some code is probably redundant and/or unnecessary. There was a lot of learning going on through this assignment. */
+
+.links {
+    font-size: 20px;
+    float: right;
+    letter-spacing: 1.5;
+    line-height: 2.0;
+    position: relative;
+    margin-top: 15px;
+}
+
+/* Adding padding-bottom and margin-bottom to my links just adds my white space problem back into the picture... going to try positioning fixes:
+I found "vertical-align: middle" and "vertical-align: center" but these didn't help.
+Adding margin-top was what helped me for now, but I have a feeling this wasn't the best fix to my problem...
+*/
+
+a {
+    color: #777777;
+    padding-left: 15px;
+    margin-left: 15px;
+    text-decoration: none;
+    margin-top: auto;
+    border-left: 1px solid #efefef;
+}
+
+a:first-child {
+    border-left: 0 none;
+}
+
+a:hover {
+    color: #4aaaa5;
+}
+
+#main-content {
+    background-image: url('../images/upfeathers.png');
+    border-top-style: solid;
+    border-top-width: 0.5px;
+    border-top-color: #666666;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    width: 100%;
+    /* float: left; */
+    position: relative;
+    padding-bottom: 100px;
+    padding-right: 100px;
+}
+
+#white-box {
+    background-color: white;
+    width: 960px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 30px 0px 30px 0px;
+}
+
+h2 {
+    color: #4aaaa5;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 26px;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+hr {
+    width: 95%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#image {
+    width: 20%;
+    height: 20%;
+    float: left;
+    padding: 20px;
+}
+
+p {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 2.0;
+    letter-spacing: 0.3px;
+    padding: 20px;
+}
+
+#footer {
+    width: 100%;
+    position: absolute;
+}
+
+#teal-foot {
+    background-color: #4aaaa5;
+    height: 5px;
+    width: 100%;
+    float: left;
+    padding-right: 50px;
+}
+
+#grey-foot {
+    background-color: #666666;
+    height: 40px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    float: left;
+    padding: 20px;
+}
+
+#CP {
+    vertical-align: bottom;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Full Screen or Browser */
+@media screen and (max-width: 980px) {
+    
+    h1 {
+        margin-left: 20px;
+    }
+
+    .links {
+        padding-right: 50px;
+    }
+
+    #main-content {
+        width: 100%;
+        height: 1200px;
+        float: left;
+    }
+
+    #white-box {
+        width: 650px;
+        position: absolute;
+        margin-left: 20px;
+    }
+}
+
+/* Tablet Size */
+@media screen and (max-width: 768px) {
+    
+    #nav-bar {
+        width: 708px;
+    }
+
+    h1 {
+        margin-left: 0;
+    }
+
+    #main-content {
+        width: 100%;
+        height: 1300px;
+        float: left;
+    }
+
+    #white-box {
+        width: 708px;
+        position: absolute;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+/* Phone Landscape View */
+@media screen and (max-width: 640px) {
+
+    #nav-bar .links {
+        float: none;
+        position: static;
+        margin: 0;
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+        width: 580px;
+    }
+
+    .links {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    h1 {
+        margin: 0;
+        width: 600px;
+        top: 0;
+    }
+
+    #main-content {
+        width: 100%;
+        height: 1400px;
+        float: left;
+    }
+
+    #white-box {
+        width: 580px;
+        position: absolute;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    hr {
+        width: auto;
+    }
+}
+
+/* h1 .links  */
